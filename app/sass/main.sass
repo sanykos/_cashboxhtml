@@ -30,14 +30,121 @@ ul > li
   display: flex
   justify-content: space-between
   align-items: center
+  min-height: 54px
+  height: auto
   .nav-cashbox
-    border: 1px solid red
     color: #fff
     max-width: 727px
+    position: relative
     width: 100%
+    font-family: 'AvenirNextCyr-Demi', sans-serif
+    font-size: $mainfs
     ul
       display: flex
       justify-content: space-between
+      li
+        a
+          display: inline-block
+          position: relative
+          &:hover:after
+            content: ''
+            position: absolute
+            border-bottom: 3px solid #ffe789
+            bottom: -19px
+            display: block
+            width: 100%
+        &:nth-child(n + 5)
+          text-transform: uppercase
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      width: 1px
+      height: 60px
+      background-color: #74a962
+      right: -55px
+      top: 50%
+      transform: translateY(-50%) rotate(30deg)
+
+
+  .main-nav
+    max-width: 363px
+    width: 100%
+    color: #fff
+    font-size: $mainfs
+    font-family: 'AvenirNextCyr-Light', sans-serif
+    ul
+      display: flex
+      justify-content: space-between
+
+
+.header-contacts
+  background-color: #fafafa
+  .header-contacts-bg
+    width: 348px
+    height: 109px
+    right: 0
+    position: absolute
+    background: url("../img/header-contacts-bg.png") center center/cover no-repeat
+    display: block
+  .wrapper-header-contacts
+    min-height: 110px
+    height: auto
+    display: flex
+    font-family: 'AvenirNextCyr-Light', sans-serif
+    font-size: 14px
+    color: #4d4d4d
+    ul
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 100%
+      li
+        display: flex
+        align-items: center
+        .logo
+          margin-right: 43px
+          width: 50px
+          height: 50px
+          background: url("../img/main-logo.png") center center/contain no-repeat
+        .address-icon
+          margin-right: 10px
+          width: 50px
+          height: 50px
+          background: url("../img/address-icon.png") center center/contain no-repeat
+        .query-btn
+          display: inline-block
+          text-transform: uppercase
+          border: 1px solid $accent
+          padding: 20px 30px
+          border-radius: 30px
+          color: $accent
+          font-family: 'AvenirNextCyr-Demi', sans-serif
+          font-size: 12px
+          font-weight: bold
+          &:hover
+            color: #ffffff
+            background-color: $accent
+      li:last-child
+        flex-direction: column
+        text-align: right
+        align-items: flex-end
+        .telephone
+          font-size: 18px
+          font-family: 'AvenirNextCyr-Bold',sans-serif
+          color: #000
+          font-weight: bold
+        .schedule
+          margin-top: 10px
+          font-family: 'AvenirNextCyr-Light',sans-serif
+          font-size: 12px
+          color: #afafaf
+
+
+
+
+
+
 
 
 
