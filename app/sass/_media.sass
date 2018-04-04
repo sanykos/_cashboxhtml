@@ -2,6 +2,9 @@
 
 @media screen and (max-width: 1200px)
 
+  header
+    .icon
+      display: block
 
   .header-contacts
     .header-contacts-bg
@@ -14,6 +17,7 @@
         margin-top: 20px
 
 
+
   .wrapper-request
     flex-direction: column
     align-items: center
@@ -21,5 +25,33 @@
       margin-top: 35px
       .video-bg
         min-height: 342px
+
+  .wrapper-menu
+    position: fixed
+    display: none
+    top: 0
+    left: 0
+    background-color: $accent
+    width: 100vw
+    z-index: 99
+    flex-direction: column
+    height: 100vh
+    justify-content: space-around
+    .nav-cashbox
+      max-width: 100vw
+      ul
+        align-items: center
+        flex-direction: column
+        li
+          margin-top: 20px
+    &:after
+      display: none
+    .main-nav
+      width: 100vw
+      ul
+        flex-direction: column
+        align-items: center
+        li
+          margin-top: 20px
 
 
