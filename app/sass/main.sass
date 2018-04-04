@@ -146,6 +146,17 @@ section, header
           color: #afafaf
 
 
+.request-bg
+  position: absolute
+  top: 0
+  left: -245px
+  display: block
+  background: url('../img/bg-section.png') center center/cover no-repeat;
+  max-width: 830px
+  width: 100%
+  min-height: 510px
+
+          
 .wrapper-request
   padding-top: 78px
   position: relative
@@ -246,11 +257,31 @@ section, header
 
 
 .wrapper-video
-  border: 1px solid red
+  position: relative
   max-width: 600px
   width: 100%
   min-height: 342px
   height: auto
+  box-shadow: -2px 128px 65px -112px rgba(0,0,0,0.77)
+  .video-bg
+    background: url("../img/video-bg.jpg") center center/cover no-repeat
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100%
+    .video-play__btn
+      background: url("../img/video-play.png") center center/contain no-repeat
+      width: 60px
+      height: 60px
+  .img-cashbox
+    background: url("../img/cashbox.png") center center/cover no-repeat
+    display: block
+    width: 320px
+    height: 201px
+    position: absolute
+    bottom: -84px
+    left: -132px
 
 
 
