@@ -17,6 +17,9 @@ a
 ul > li
   list-style: none
 
+section, header
+  position: relative
+
 .container
   max-width: 1200px
   width: 100%
@@ -39,6 +42,8 @@ ul > li
     width: 100%
     font-family: 'AvenirNextCyr-Demi', sans-serif
     font-size: $mainfs
+    font-weight: bold
+
     ul
       display: flex
       justify-content: space-between
@@ -139,6 +144,113 @@ ul > li
           font-family: 'AvenirNextCyr-Light',sans-serif
           font-size: 12px
           color: #afafaf
+
+
+.wrapper-request
+  padding-top: 78px
+  position: relative
+  display: flex
+  justify-content: space-between
+  .submit-request
+    display: flex
+    flex-direction: column
+    padding-top: 35px
+    &__title
+      position: relative
+      color: #282828
+      font-family: 'AvenirNextCyr-Regular', sans-serif
+      .onlineCashbox
+        font-family: 'AvenirNextCyr-Heavy', sans-serif
+        font-size: 36px
+        font-weight: bolder
+      .m-cashbox
+        color: $accent
+        font-family: 'AvenirNextCyr-Light', sans-serif
+      &:after
+        content: ''
+        position: absolute
+        display: block
+        width: 37px
+        height: 1px
+        background-color: $accent
+        top: 50%
+        transform: translateY(-50%)
+        left: -55px
+    &__services
+      display: flex
+      justify-content: space-between
+      ul
+        padding-top: 42px
+        font-family: 'AvenirNextCyr-Demi',sans-serif
+        font-size: 16px
+        font-weight: bold
+        color: #222222
+        li
+          display: flex
+          margin-top: 10px
+          align-items: center
+          .submit-request__services-icon
+            margin-right: 20px
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 37px
+            height: 37px
+            background-color: #6787c7
+            .services-icon
+              display: block
+              width: 20px
+              height: 20px
+            .delivery-icon
+              background: url("../img/delivery-icon.png") center center/contain no-repeat
+            .tools-icon
+              background: url("../img/tools-icon.png") center center/contain no-repeat
+            .fns-icon
+              background: url("../img/connect-icon.png") center center/contain no-repeat
+            .ofd-icon
+              background: url("../img/reg-OFD-icon.png") center center/contain no-repeat
+    &-btn
+      display: flex
+      align-items: center
+      padding-top: 53px
+      .request-btn
+        display: inline-block
+        border-radius: 25px
+        position: relative
+        font-size: 16px
+        font-family: 'AvenirNextCyr-Demi',sans-serif
+        font-weight: bold
+        color: #fff
+        padding: 14px 50px
+        box-shadow: inset 0px 0px 0px #f2f2f2, 0px 3px 0px 0px #468528, 0px 3px 5px #468528
+        background: linear-gradient(to bottom, rgba(92,175,54,1) 0%,rgba(83,155,49,1) 48%,rgba(83,155,49,1) 66%)
+        &:after
+          content: ''
+          display: inline-block
+          width: 100%
+          position: absolute
+          left: 0
+          top: 0
+          height: 100%
+          border-radius: 25px
+          box-shadow: 0 0 20px rgba(0,0,0,0.4)
+      small
+        font-size: 12px
+        color: #a7a7a8
+        margin-left: 25px
+        font-family: 'AvenirNextCyr-Light', sans-serif
+
+
+
+
+
+
+.wrapper-video
+  border: 1px solid red
+  max-width: 600px
+  width: 100%
+  min-height: 342px
+  height: auto
 
 
 
